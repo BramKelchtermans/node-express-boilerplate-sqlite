@@ -13,3 +13,4 @@ coverage
 database.db 
 
 package-lock.json
+src/logs
