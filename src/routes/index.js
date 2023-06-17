@@ -9,13 +9,13 @@ const router = express.Router();
 
 const defaultRoutes = [
   {
-    path: '/system',
-    route: systemRoute,
-  },
-  {
     path: '/users',
     route: userRoute,
   },
+  {
+    path: '/auth',
+    route: authRoute
+  }
 ];
 
 const devRoutes = [

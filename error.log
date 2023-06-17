@@ -1,0 +1,116 @@
+[31merror[39m: Error: ""userId"" must be a valid mongo id
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/validate.js:15:17
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/auth.js:27:17
+[31merror[39m: GET /users/getUsers 400 - 6.855 ms - message: ""userId"" must be a valid mongo id
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[31merror[39m: Error: "userId" must be a number
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/validate.js:15:17
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/auth.js:27:17
+[31merror[39m: GET /users/getUsers 400 - 50.552 ms - message: "userId" must be a number
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[31merror[39m: TypeError: User.findById is not a function
+    at Object.getUserById (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/services/user.service.js:40:15)
+    at fn (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/controllers/user.controller.js:20:34)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/utils/catchAsync.js:2:19
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/validate.js:18:10
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/auth.js:27:17
+[31merror[39m: GET /users/getUsers 500 - 41.713 ms - message: User.findById is not a function
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[31merror[39m: TypeError: User.findById is not a function
+    at Object.getUserById (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/services/user.service.js:40:15)
+    at fn (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/controllers/user.controller.js:20:34)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/utils/catchAsync.js:2:19
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/validate.js:18:10
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/auth.js:27:17
+[31merror[39m: GET /users/getUsers 500 - 58.016 ms - message: User.findById is not a function
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[31merror[39m: Error: User not found
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/controllers/user.controller.js:22:11
+[31merror[39m: GET /users/getUsers 404 - 49.846 ms - message: User not found
+[31merror[39m: TypeError: User.paginate is not a function
+    at Object.queryUsers (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/services/user.service.js:30:28)
+    at fn (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/controllers/user.controller.js:15:36)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/utils/catchAsync.js:2:19
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/validate.js:18:10
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/auth.js:27:17
+[31merror[39m: GET /users 500 - 10.506 ms - message: User.paginate is not a function
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[31merror[39m: TypeError: User.paginate is not a function
+    at Object.queryUsers (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/services/user.service.js:30:28)
+    at fn (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/controllers/user.controller.js:15:36)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/utils/catchAsync.js:2:19
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/validate.js:18:10
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/auth.js:27:17
+[31merror[39m: GET /users 500 - 48.071 ms - message: User.paginate is not a function
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[31merror[39m: ReferenceError: db is not defined
+    at Object.queryUsers (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/services/user.service.js:30:18)
+    at fn (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/controllers/user.controller.js:15:36)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/utils/catchAsync.js:2:19
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/validate.js:18:10
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/auth.js:27:17
+[31merror[39m: GET /users 500 - 50.476 ms - message: db is not defined
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[31merror[39m: TypeError: User.paginate is not a function
+    at Object.queryUsers (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/services/user.service.js:41:45)
+    at fn (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/controllers/user.controller.js:15:36)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/utils/catchAsync.js:2:19
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/validate.js:18:10
+    at Layer.handle [as handle_request] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/express/lib/router/route.js:144:13)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/middlewares/auth.js:27:17
+[31merror[39m: GET /users 500 - 51.927 ms - message: User.paginate is not a function
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[31merror[39m: Error: 
+    at Database.<anonymous> (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/sequelize/src/dialects/sqlite/query.js:236:27)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/sequelize/src/dialects/sqlite/query.js:234:50
+    at new Promise (<anonymous>)
+    at Query.run (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/sequelize/src/dialects/sqlite/query.js:234:12)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/sequelize/src/sequelize.js:650:28
+    at SQLiteQueryInterface.select (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at Function.findAll (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/sequelize/src/model.js:1824:21)
+    at Function.pagination [as paginate] (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/node_modules/sequelize-paginate/src/index.js:78:20)
+    at Object.queryUsers (/home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/services/user.service.js:41:34)
+    at /home/bramkelchtermans/Documents/Projects/node-express-boilerplate-sqlite/src/controllers/user.controller.js:15:18
+[31merror[39m: GET /users 500 - 53.035 ms - message: SQLITE_ERROR: no such column: name
+[32minfo[39m: Listening to port 3001
+[33mwarn[39m: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+[32minfo[39m: GET /users 200 - 43.083 ms

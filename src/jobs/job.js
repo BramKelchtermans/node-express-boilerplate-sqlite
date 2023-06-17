@@ -10,7 +10,6 @@ class Job {
     ) {
         var cron = require('node-cron');
         const template = second + ' ' + minute + ' ' + hour + ' ' + dayOfMonth + ' ' + month + ' ' + dayOfWeek;
-        console.log(template)
         cron.schedule(template, this.fire);
     }
 

@@ -17,7 +17,6 @@ const getCPUInfo = catchAsync(async (req, res) => {
 });
 
 const getSystemInfoHistory = catchAsync(async (req, res) => {
-    console.log("Here we go")
     const moment = require('moment');
     const result = await SystemInformation.findAndCountAll({
         where: {

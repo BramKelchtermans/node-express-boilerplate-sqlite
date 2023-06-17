@@ -1,6 +1,7 @@
 const httpStatus = require('http-status');
 const { User } = require('../models');
 const ApiError = require('../utils/ApiError');
+const bcrypt = require('bcryptjs');
 
 /**
  * Create a user
@@ -11,6 +12,8 @@ const createUser = async (userBody) => {
   if (await User.isEmailTaken(userBody.email)) {
     throw new ApiError(httpStatus.BAD_REQUEST, 'Email already taken');
   }
+
+  userBody['password'] = await bcrypt.hash(userBody['password'], 8);
   return User.create(userBody);
 };
 
@@ -24,8 +27,8 @@ const createUser = async (userBody) => {
  * @returns {Promise<QueryResult>}
  */
 const queryUsers = async (filter, options) => {
-  const users = await User.paginate(filter, options);
-  return users;
+  const { docs, pages, total } = await User.paginate()
+  return {docs, pages, total};
 };
 
 /**
@@ -34,7 +37,7 @@ const queryUsers = async (filter, options) => {
  * @returns {Promise<User>}
  */
 const getUserById = async (id) => {
-  return User.findById(id);
+  return User.findByPk(id);
 };
 
 /**
