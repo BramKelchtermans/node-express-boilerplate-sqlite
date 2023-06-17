@@ -1,52 +1,12 @@
-# RESTful API Node Server Boilerplate
+# RESTful API Node Server Boilerplate with SQLite
 
-[![Build Status](https://travis-ci.org/hagopj13/node-express-boilerplate.svg?branch=master)](https://travis-ci.org/hagopj13/node-express-boilerplate)
+<!-- [![Build Status](https://travis-ci.org/hagopj13/node-express-boilerplate.svg?branch=master)](https://travis-ci.org/hagopj13/node-express-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/hagopj13/node-express-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/hagopj13/node-express-boilerplate?branch=master)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) -->
 
-A boilerplate/starter project for quickly building RESTful APIs using Node.js, Express, and Mongoose.
+This boilerplate is forked from the Restful API node Server Boilerplate of hagopj13 ([repo](https://github.com/hagopj13/node-express-boilerplate)). For the general documentation you should look over there.
 
-By running a single command, you will get a production-ready Node.js app installed and fully configured on your machine. The app comes with many built-in features, such as authentication using JWT, request validation, unit and integration tests, continuous integration, docker support, API documentation, pagination, etc. For more details, check the features list below.
-
-## Quick Start
-
-To create a project, simply run:
-
-```bash
-npx create-nodejs-express-app <project-name>
-```
-
-Or
-
-```bash
-npm init nodejs-express-app <project-name>
-```
-
-## Manual Installation
-
-If you would still prefer to do the installation manually, follow these steps:
-
-Clone the repo:
-
-```bash
-git clone --depth 1 https://github.com/hagopj13/node-express-boilerplate.git
-cd node-express-boilerplate
-npx rimraf ./.git
-```
-
-Install the dependencies:
-
-```bash
-yarn install
-```
-
-Set the environment variables:
-
-```bash
-cp .env.example .env
-
-# open .env and modify the environment variables (if needed)
-```
+In this version of the API, MongoDB will be replaced with SQLite. Moreover, built-in Cron Jobs are added, alongside some basic commands to make the development process more easy.
 
 ## Table of Contents
 
@@ -66,7 +26,7 @@ cp .env.example .env
 
 ## Features
 
-- **NoSQL database**: [MongoDB](https://www.mongodb.com) object data modeling using [Mongoose](https://mongoosejs.com)
+- **SQLite Database**: [SQLite](https://www.sqlite.org) object data modeling using [sqlite3](https://www.npmjs.com/package/sqlite3)
 - **Authentication and authorization**: using [passport](http://www.passportjs.org)
 - **Validation**: request data validation using [Joi](https://github.com/hapijs/joi)
 - **Logging**: using [winston](https://github.com/winstonjs/winston) and [morgan](https://github.com/expressjs/morgan)
@@ -89,11 +49,12 @@ cp .env.example .env
 - **Editor config**: consistent editor configuration using [EditorConfig](https://editorconfig.org)
 
 ## Commands
+### Running 
 
 Running locally:
 
 ```bash
-yarn dev
+yarn start:dev
 ```
 
 Running in production:
@@ -142,8 +103,17 @@ yarn prettier
 
 # fix prettier errors
 yarn prettier:fix
-```
 
+```
+### Database
+Migrate:
+```bash 
+# execute migrations
+yarn migrate
+
+# execute fresh migration
+yarn migrate:fresh
+```
 ## Environment Variables
 
 The environment variables can be found and modified in the `.env` file. They come with these default values:
