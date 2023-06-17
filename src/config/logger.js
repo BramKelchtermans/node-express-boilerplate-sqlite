@@ -8,6 +8,9 @@ const enumerateErrorFormat = winston.format((info) => {
   return info;
 });
 
+const today = new Date();
+const logFilename = `./src/logs/express-log_${today.getDate() + 1}_${today.getMonth() + 1}_${today.getFullYear()}.log`
+
 const logger = winston.createLogger({
   level: config.env === 'development' ? 'debug' : 'info',
   format: winston.format.combine(
@@ -17,7 +20,7 @@ const logger = winston.createLogger({
     winston.format.printf(({ level, message }) => `${level}: ${message}`)
   ),
   transports: [
-    new (winston.transports.File)({ filename: 'error.log' })
+    new (winston.transports.File)({ filename: logFilename })
   ],
 });
 
